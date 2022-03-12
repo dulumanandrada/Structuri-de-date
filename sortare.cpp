@@ -225,7 +225,7 @@ int main()
         
         auto start = chrono::steady_clock::now();
         
-        CountSort(v, n);
+        //CountSort(v, n);
         //MergeSort(v, 0, n-1);
         //QuickSort(v, 0, n-1);
         //RadixSort(v, n);
