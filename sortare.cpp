@@ -257,13 +257,16 @@ int main()
         
         Copiere(v, aux, n);
 
-        //quicksort:
-        start = chrono::steady_clock::now();
-        QuickSort(v, 0, n-1);
-        end = chrono::steady_clock::now();
-        diff = end - start;
-        fout << "QuickSort -> Ordonat: " << Verificare(a, v, n) << " -> timp: " << chrono::duration<double, milli>(diff).count() << " ms" << endl;
-        
+        if((n == 100000001 && nmax >= 1000001) || (n == 10000001 && nmax >= 1001))
+        {//quicksort:
+            start = chrono::steady_clock::now();
+            QuickSort(v, 0, n-1);
+            end = chrono::steady_clock::now();
+            diff = end - start;
+            fout << "QuickSort -> Ordonat: " << Verificare(a, v, n) << " -> timp: " << chrono::duration<double, milli>(diff).count() << " ms" << endl;
+        }
+        else fout << "QuickSort -> ERROR caught fatal signal" << endl;
+
         Copiere(v, aux, n);
 
         if(n <= 1000001)
@@ -274,8 +277,7 @@ int main()
             diff = end - start;
             fout << "RadixSort -> Ordonat: " << Verificare(a, v, n) << " -> timp: " << chrono::duration<double, milli>(diff).count() << " ms" << endl;
         }
-        else 
-            fout << "RadixSort -> ERROR caught fatal signal" << endl;
+        else fout << "RadixSort -> ERROR caught fatal signal" << endl;
         
         Copiere(v, aux, n);
 
@@ -285,7 +287,7 @@ int main()
         end = chrono::steady_clock::now();
         diff = end - start;
         fout << "ShellSort -> Ordonat: " << Verificare(a, v, n) << " -> timp: " << chrono::duration<double, milli>(diff).count() << " ms" << endl;
-        
+
         fout << "\n";
     } 
 
