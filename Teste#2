@@ -1,0 +1,40 @@
+Testul nr.1: N = 1001 MaxN = 100000001
+Sort -> timp: 0.028625 ms
+CountSort -> Ordonat: 1 -> timp: 219.054 ms
+MergeSort -> Ordonat: 1 -> timp: 0.070167 ms
+QuickSort -> Ordonat: 1 -> timp: 0.069125 ms
+RadixSort -> Ordonat: 1 -> timp: 0.038375 ms
+ShellSort -> Ordonat: 1 -> timp: 0.0905 ms
+
+Testul nr.2: N = 10001 MaxN = 1001
+Sort -> timp: 0.331166 ms
+CountSort -> Ordonat: 1 -> timp: 0.041291 ms
+MergeSort -> Ordonat: 1 -> timp: 0.86575 ms
+QuickSort -> Ordonat: 1 -> timp: 0.777 ms
+RadixSort -> Ordonat: 1 -> timp: 0.29475 ms
+ShellSort -> Ordonat: 1 -> timp: 1.22958 ms
+
+Testul nr.3: N = 100001 MaxN = 10001
+Sort -> timp: 4.188 ms
+CountSort -> Ordonat: 1 -> timp: 0.470333 ms
+MergeSort -> Ordonat: 1 -> timp: 10.6492 ms
+QuickSort -> Ordonat: 1 -> timp: 9.729 ms
+RadixSort -> Ordonat: 1 -> timp: 2.52092 ms
+ShellSort -> Ordonat: 1 -> timp: 17.3206 ms
+
+Testul nr.4: N = 1000001 MaxN = 11
+Sort -> timp: 10.7621 ms
+CountSort -> Ordonat: 1 -> timp: 4.00479 ms
+MergeSort -> Ordonat: 1 -> timp: 86.2879 ms
+QuickSort -> Ordonat: 1 -> timp: 54300.1 ms
+RadixSort -> Ordonat: 1 -> timp: 10.8445 ms
+ShellSort -> Ordonat: 1 -> timp: 82.419 ms
+
+Testul nr.5: N = 10000001 MaxN = 1001
+Sort -> timp: 280.275 ms
+CountSort -> Ordonat: 1 -> timp: 39.8435 ms
+MergeSort -> Ordonat: 1 -> timp: 1185.67 ms
+QuickSort -> Ordonat: 1 -> timp: 56904.8 ms
+RadixSort -> ERROR caught fatal signal
+ShellSort -> Ordonat: 1 -> timp: 2091.51 ms
+
